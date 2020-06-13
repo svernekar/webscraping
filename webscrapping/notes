@@ -1,0 +1,12 @@
+scrapy startproject webscrapping
+
+Files:
+1.tems.py:define the fields that you want to scrap
+2.settings.py :set the required settings important fields:
+    1)BOT_NAME = 'webscrapping'
+    2)#USER_AGENT = 'webscrapping (+http://www.yourdomain.com)'
+    3)ROBOTSTXT_OBEY = True
+    4)#CONCURRENT_REQUESTS = 32
+    5)#AUTOTHROTTLE_ENABLED = True
+3.pipelines.py:Whatever is obtained in scraping is stored  by pipelines.py in json format
+4.middlewares.py :to define the middleware/proxy etc in case required to reach the url
